@@ -1,42 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="shortcut icon" href="./favicon.png" />
-        <meta name="theme-color" content="#000000" />
-        <title>Simple Boilerplate</title>
-        <link rel="stylesheet" type="text/css" href="src/css/index.css">
-        <!-- Add additional CSS & JS files as necessary here -->
-    </head>
-    <body>
-        <!-- Add your site or application content here -->
-        <div id="root">
-            <img src="src/assets/simple-boilerplate-logo@3x.png" class="logo" alt="logo" />
-            <h1>Welcome to Simple Boilerplate!</h1>
-            <p>
-                This boilerplate is ready for HTML/CSS, Javascript, and JQuery projects. 
-                It includes a live server that lets you see HTML/JS/CSS changes with every save.
-            </p>
-            
-            <p id="subtext">
-                An Example JavaScript Hook.
-            </p>
 
-            <h2>Instructions:</h2>
-            <p>
-                To see live changes, please go to the root folder ('simple-boilerplate/')
-                and run "npm start".
-            </p>
-            <p>
-                To start coding, start changing the files within src/css and src/js. 
-                Images can be stored in src/assets.
-            </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="./favicon.png" />
+    <meta name="theme-color" content="#000000" />
+    <title>Simple Boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="src/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">External</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <div class="banner__heading">
+                <h1>SquareSheep</h1>
+            </div>
+            <div class="banner__text">
+                <h2>Banner</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quae, illo omnis harum doloribus
+                    impedit!</p>
+            </div>
         </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-        <!-- ================================ -->
-        <!-- Add more JavaScript files here!! -->
-        <!-- ================================ -->
-        <script type="text/javascript" src="src/js/other.js"></script>
-        <script type="text/javascript" src="src/js/index.js"></script>
-    </body>
+    </header>
+
+    <main>
+
+        <section>
+            <!-- Feature-->
+            <div class="card">
+                <div class="card__img">
+                    <img src="https://via.placeholder.com/360x180" alt="">
+                </div>
+                <div class="card__header">
+                    <h3>Card header</h3>
+                </div>
+                <div class="card__text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum error perspiciatis commodi
+                        tenetur
+                        praesentium maxime in, delectus necessitatibus debitis repudiandae quis sint velit aut ipsa
+                        aliquam
+                        sunt quasi numquam iusto.</p>
+                </div>
+                <div class="card__button">
+                    <button type="button" class="card__button--green">Button green</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="https://via.placeholder.com/360x180" alt="">
+                </div>
+                <div class="card__header">
+                    <h3>Card header</h3>
+                </div>
+                <div class="card__text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum error perspiciatis commodi
+                        tenetur
+                        praesentium maxime in, delectus necessitatibus debitis repudiandae quis sint velit aut ipsa
+                        aliquam
+                        sunt quasi numquam iusto.</p>
+                </div>
+                <div class="card__button">
+                    <button type="button" class="card__button--details">Button details</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="https://via.placeholder.com/360x180" alt="">
+                </div>
+                <div class="card__header">
+                    <h3>Card header</h3>
+                </div>
+                <div class="card__text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum error perspiciatis commodi
+                        tenetur
+                        praesentium maxime in, delectus necessitatibus debitis repudiandae quis sint velit aut ipsa
+                        aliquam
+                        sunt quasi numquam iusto.</p>
+                </div>
+                <div class="button">
+                    <button type="button" class="card__button--red">Button red</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Two colums -->
+            <article>
+                <h3>Two colum header</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis maiores, quae in at modi
+                    incidunt quo eum, soluta recusandae esse atque voluptatum minus! Consectetur voluptatum ut nisi
+                    ipsum deleniti eius?</p>
+            </article>
+            <article>
+                <h3>Two column header</h3>
+                <p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis maiores, quae in at
+                        modi
+                        incidunt quo eum, soluta recusandae esse atque voluptatum minus! Consectetur voluptatum ut
+                        nisi
+                        ipsum deleniti eius?</p>
+                </p>
+            </article>
+        </section>
+        <section>
+            <!-- Services-->
+            <h2>Our services</h2>
+            <p>
+                Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id
+                felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.
+                Etiam a mi quis arcu varius condimentum.
+            </p>
+        </section>
+        <section>
+            <!-- Columns-->
+            <article>
+                <h3>
+                    Column one
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <section>
+        <!-- Contact-->
+    </section>
+
+    <footer>
+
+    </footer>
+    <script type=" text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js">
+    </script>
+    <!-- ================================ -->
+    <!-- Add more JavaScript files here!! -->
+    <!-- ================================ -->
+    <script type="text/javascript" src="src/js/other.js"></script>
+    <script type="text/javascript" src="src/js/index.js"></script>
+</body>
+
 </html>

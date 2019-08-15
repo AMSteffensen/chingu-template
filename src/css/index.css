@@ -1,28 +1,147 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #2b2b2b;
-  color: rgb(214, 214, 214);
-  max-width: 900px;
-  margin: 0 auto;
-}
+/*------------------------------------*\
+  #IMAGES
+\*------------------------------------*/
+/* img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: middle;
 
-#root {
-  background-color: #3f3f3f;
-  padding: 60px;
-  border-radius: 20px;
-  height: 100%;
-  margin-top: 100px;
-}
+} */
 
-.logo {
-  display: block;
-  margin: 0 auto;
-}
+/*------------------------------------*\
+  #TYPOGRAPHY
+\*------------------------------------*/
 
-h1 {
-  margin-top: 50px;
-}
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Anton',
+    sans-serif;
+} */
 
 p {
-  font-size: 22px;
+  font-family: 'Roboto',
+    sans-serif;
+}
+
+/*------------------------------------*\
+  #GENERAL
+\*------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*------------------------------------*\
+  #NAVIGATION
+\*------------------------------------*/
+/* Navigation */
+ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+
+  background-color: #383E4C;
+  border-width: 0 0 1px;
+}
+
+
+/*------------------------------------*\
+  #BANNER
+\*------------------------------------*/
+
+.banner {
+  background: url('https://via.placeholder.com/360x480') top left no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2em;
+}
+
+.banner__heading {
+  font-family: 'Anton',
+    sans-serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.banner__text {
+  background: hsla(194, 53%, 64%, .8);
+  padding: 1.5em 2em;
+  margin: 0 .2em;
+  text-align: center;
+}
+
+/*------------------------------------*\
+  #CARD
+\*------------------------------------*/
+
+.card {
+  background: hsla(194, 53%, 64%, .8);
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+/*------------------------------------*\
+  #BUTTON
+\*------------------------------------*/
+
+.card__button {
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 32px;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card__button--green {
+  background-color: green;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card__button--details {
+  background-color: transparent;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card__button--red {
+  background-color: red;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
 }
